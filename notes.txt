@@ -1,0 +1,20 @@
+Changes made:
+--index.html
+1.Added bootstrap.css for setting up initial styles to all elements across page.
+2.Added loader div to show initial loading text until all products are fetched.
+3.Added necessary meta tags
+
+--product-template.html
+1.Made use of bootstrap grid layout to show contents
+2.Added product description div for each product.
+3.Added close(X) button for each product.
+
+--styles.css
+1.Added floats whereever required, transitions for product mouseover, changing font-sizes of elements,
+ aligning e.t.c
+
+--script.js
+1.Added callbacks for fetching products. setTimeout is removed and instead called methods as callbacks on getJson response function. This eliminated buggy product loading.
+2.Showing loader div before ajaxstart and hiding after ajaxcomplete for user to know that the page is still loading until the page renders.
+3. Added onclick functionality to close-button to remove product from dom. Added smooth animation while this happens.
+4.Removed  products in blocks of 3, instead they flow evenly one after the other. 
